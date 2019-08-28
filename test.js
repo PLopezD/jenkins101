@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   head = document.querySelector('.page-headline')
   if (head && head.innerText ==  "Pipeline yeet") {
     buildUiElements()
-    addEventListenersToUi()
   }
 });
 
@@ -25,6 +24,7 @@ let buildUiElements = () => {
   head.appendChild(uiDiv);
 }
 
-let submitForm = () => {
+let submitForm = (e) => {
+  e.preventDefault();
   console.log(1234);
 }
