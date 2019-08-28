@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 let buildButton = () => {
   console.log('building');
   let newButton = document.createElement('button');
-  newButton.value = 'yeettown'
+  newButton.innerText = 'yeettown'
+  newButton.className = 'submit-button primary'
   head.appendChild(newButton);
 
 }
