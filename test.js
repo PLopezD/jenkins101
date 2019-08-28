@@ -1,5 +1,6 @@
+let head;
 document.addEventListener("DOMContentLoaded", (event) => {
-  let head = document.querySelector('.page-headline')
+  head = document.querySelector('.page-headline')
   if (head && head.innerText ==  "Pipeline yeet") {
     buildButton()
   }
@@ -7,5 +8,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 let buildButton = () => {
   console.log('building');
-  console.log(head);
+  let newButton = document.createElement('button');
+  newButton.value = 'yeettown'
+  head.appendChild(newButton);
+
 }
