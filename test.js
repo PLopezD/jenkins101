@@ -25,6 +25,8 @@ let buildUiElements = () => {
 }
 
 let submitForm = (e) => {
+  console.log(e);
   e.preventDefault();
   console.log(1234);
+  return false
 }
